@@ -1,0 +1,55 @@
+package SeleniumPract;
+// CHECK WHETHER RADIOBUTTONS ARE SELECTED OR NOT..
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class RadiobtnFb {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.gecko.driver", "../Selenium3.0/DriverExe/geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://facebook.com");
+		
+		// Check Both Selection
+		WebElement chkf = driver.findElement(By.id("u_0_9"));
+		boolean statusf = chkf.isSelected();
+		
+		WebElement chkm = driver.findElement(By.id("u_0_a"));
+		boolean statusm = chkm.isSelected();
+		
+		System.out.println("Gender Status is " +statusf +" & " +statusm );
+		
+		if(statusf && statusm)
+			System.out.println("Gender(M & F) is Selected");
+		else
+			System.out.println("Gender(M & F) is not Selected");
+						
+		Thread.sleep(2000);
+		
+		// Female Selection
+		WebElement chkfl = driver.findElement(By.id("u_0_9"));
+		boolean statusfl = chkf.isSelected();
+	
+		System.out.println("Gender Female Status is " +statusfl);
+		
+		if(statusfl)
+			System.out.println("Gender(F) is Selected");
+		else
+			System.out.println("Gender(F) is not Selected");
+	
+		Thread.sleep(2000);
+		
+		 // Male Selection
+		WebElement chkml = driver.findElement(By.id("u_0_a"));
+		boolean statusml = chkm.isSelected();
+		
+		System.out.println("Gender(M) Status is " +statusml);
+		
+		if(statusml)
+			System.out.println("Gender(M) is Selected");
+		else
+			System.out.println("Gender(M) is not Selected");
+		
+	}
+}

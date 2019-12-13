@@ -1,0 +1,20 @@
+package SeleniumPract;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class Script {
+	public static void main(String[] args) throws IOException {
+		// Read Property file data.
+		Properties p=new Properties();
+		
+		String propertyfilepath="/Selenium3.0/src/SeleniumPract/Demo.properties";
+		
+		FileInputStream f=new FileInputStream(propertyfilepath);
+		p.get(f);
+		
+		
+	}
+}

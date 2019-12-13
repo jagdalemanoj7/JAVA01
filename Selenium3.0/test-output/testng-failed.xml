@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.vtiger.opportunity.SearchOpportunityNameByCharTc_55">
+        <methods>
+          <include name="SearchOpportunityNameByCharTc_55Test"/>
+        </methods>
+      </class> <!-- com.vtiger.opportunity.SearchOpportunityNameByCharTc_55 -->
+      <class name="com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52">
+        <methods>
+          <include name="SearchOpportunityByStartWithOptionWithValidNameTc_52Test"/>
+        </methods>
+      </class> <!-- com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

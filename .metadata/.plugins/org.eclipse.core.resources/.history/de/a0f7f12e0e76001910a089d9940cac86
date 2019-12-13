@@ -1,0 +1,13 @@
+package SeleniumPract;
+
+public class TestBrowsing extends StartBrowsing {
+	public static void main(String[] args) {
+		
+		TestBrowsing test = new TestBrowsing();
+		test.SelectBrowser("chrome");
+		
+		String title = driver.getTitle();
+		System.out.println("title");
+		
+	}
+}

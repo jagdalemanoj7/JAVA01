@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="125" started-at="2019-12-09T09:17:54Z" finished-at="2019-12-09T09:17:54Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="125" started-at="2019-12-09T09:17:54Z" finished-at="2019-12-09T09:17:54Z">
+      <class name="com.vtiger.opportunity.SearchOpportunityNameByCharTc_55">
+        <test-method status="SKIP" signature="SearchOpportunityNameByCharTc_55Test()[pri:0, instance:com.vtiger.opportunity.SearchOpportunityNameByCharTc_55@6093dd95]" name="SearchOpportunityNameByCharTc_55Test" duration-ms="31" started-at="2019-12-09T14:47:54Z" finished-at="2019-12-09T14:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchOpportunityNameByCharTc_55Test -->
+        <test-method status="SKIP" signature="configBM()[pri:0, instance:com.vtiger.opportunity.SearchOpportunityNameByCharTc_55@6093dd95]" name="configBM" is-config="true" duration-ms="0" started-at="2019-12-09T14:47:54Z" finished-at="2019-12-09T14:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.vtiger.opportunity.SearchOpportunityNameByCharTc_55@6093dd95]" name="configAM" is-config="true" duration-ms="0" started-at="2019-12-09T14:47:54Z" finished-at="2019-12-09T14:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+      </class> <!-- com.vtiger.opportunity.SearchOpportunityNameByCharTc_55 -->
+      <class name="com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52">
+        <test-method status="FAIL" signature="configBC(java.lang.String)[pri:0, instance:com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52@6d4b1c02]" name="configBC" is-config="true" duration-ms="0" started-at="2019-12-09T14:47:54Z" finished-at="2019-12-09T14:47:54Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by @Configuration on method configBC but has not been marked @Optional or defined
+in D:\javap\Selenium3.0\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by @Configuration on method configBC but has not been marked @Optional or defined
+in D:\javap\Selenium3.0\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="SKIP" signature="configBM()[pri:0, instance:com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52@6d4b1c02]" name="configBM" is-config="true" duration-ms="0" started-at="2019-12-09T14:47:54Z" finished-at="2019-12-09T14:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="SKIP" signature="SearchOpportunityByStartWithOptionWithValidNameTc_52Test()[pri:0, instance:com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52@6d4b1c02]" name="SearchOpportunityByStartWithOptionWithValidNameTc_52Test" duration-ms="0" started-at="2019-12-09T14:47:54Z" finished-at="2019-12-09T14:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchOpportunityByStartWithOptionWithValidNameTc_52Test -->
+        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52@6d4b1c02]" name="configAM" is-config="true" duration-ms="0" started-at="2019-12-09T14:47:54Z" finished-at="2019-12-09T14:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52@6d4b1c02]" name="configAC" is-config="true" duration-ms="0" started-at="2019-12-09T14:47:54Z" finished-at="2019-12-09T14:47:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vtiger.opportunity.SearchOpportunityByStartWithOptionWithValidNameTc_52 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

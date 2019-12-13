@@ -1,0 +1,36 @@
+package SeleniumPract;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Script {
+	public static void main(String[] args) throws IOException {
+		
+		// Read Property file data.
+		Properties p=new Properties();
+		
+		String propertyfilepath="../Selenium3.0/src/SeleniumPract/Demo.properties";
+		
+		FileInputStream f=new FileInputStream(propertyfilepath);
+		p.get(f);
+		
+		String prop = p.getProperty("chromproperty");
+		String path = p.getProperty("chromexepath");
+		String appurl = p.getProperty("appurl");
+		
+		System.setProperty(prop, path);
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get(appurl);
+		
+		String title = driver.getTitle();
+		System.out.println(title);
+		driver.close();
+				
+	}
+}

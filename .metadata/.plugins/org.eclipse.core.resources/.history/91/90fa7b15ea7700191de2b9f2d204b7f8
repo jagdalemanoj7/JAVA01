@@ -1,0 +1,29 @@
+package SeleniumPract;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class CheckboxFb {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.gecko.driver", "../Selenium3.0/DriverExe/geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://facebook.com");
+		
+		// Checkbox
+		WebElement chkf = driver.findElement(By.id("u_0_9"));
+		boolean statusf = chkf.isSelected();
+		
+		WebElement chkm = driver.findElement(By.id("u_0_a"));
+		boolean statusm = chkm.isSelected();
+		
+		if(statusf && statusm)
+			System.out.println("Gender(M & F) is Selected");
+		else
+			System.out.println("Gender(M & F) is not Selected");
+		
+		Thread.sleep(2000);
+		
+	}
+}

@@ -1,0 +1,9 @@
+package SeleniumPract;
+
+public class OpenAccountfb {
+	public static void main(String[] args) {
+		
+		System.setProperty("Webdriver.gecko.driver", "../Selenium3.0/DriverExe/geckodriver.exe");
+		
+	}
+}

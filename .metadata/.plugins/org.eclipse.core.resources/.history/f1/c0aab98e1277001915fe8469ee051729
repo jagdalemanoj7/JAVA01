@@ -1,0 +1,32 @@
+package SeleniumPract;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LoginVtiger {
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.gecko.driver", "../Selenium3.0/DriverExe/geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		driver.get("https://www.vtiger.com");
+		
+		// free trial button		
+		driver.findElement(By.id("customloginlink")).click();
+		
+		// SignIn link
+		//driver.findElement(By.tagName("a")).click();
+		
+		// Username
+		driver.findElement(By.name("username")).sendKeys("spirit2science");
+
+		// Password
+		driver.findElement(By.name("password")).sendKeys("techoquiz");
+		
+		// Sign In Button
+		driver.findElement(By.tagName("button")).click();
+		
+		
+		
+	}
+}
